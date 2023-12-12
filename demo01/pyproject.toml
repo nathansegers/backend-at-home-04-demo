@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "demo01"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Segers <nathan.segers@howest.be>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.88.0"
+strawberry-graphql = {extras = ["debug-server"], version = "^0.144.0"}
+python-dotenv = "^0.21.0"
+sqlalchemy = "^1.4.44"
+pymysql = "^1.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

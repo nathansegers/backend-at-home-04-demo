@@ -1,0 +1,22 @@
+services:
+  # mariadb database
+  db:
+    image: mariadb:10.11.7
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./sql_init:/docker-entrypoint-initdb.d
+      - db:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: adminer:4.8.1
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  db:
+  

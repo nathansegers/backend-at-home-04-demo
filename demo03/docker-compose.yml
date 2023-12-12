@@ -1,0 +1,37 @@
+services:
+  # mariadb database
+  db:
+    image: mariadb:10.11.7
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./sql_init:/docker-entrypoint-initdb.d
+      - db:/var/lib/mysql
+    ports:
+      - 3306:3306
+    # expose:
+    #   - 3306
+
+  adminer:
+    image: adminer:4.8.1
+    restart: always
+    ports:
+      - 8080:8080
+
+  # api:
+  #   image: nathansegers/db-demo03-api
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   restart: always
+  #   ports:
+  #     - 8000:8000
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     ENVIRONMENT: DOCKER
+
+volumes:
+  db:
+  

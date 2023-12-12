@@ -1,0 +1,25 @@
+[
+    {
+        "id": 4,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling",
+        "year": 1998,
+        "publisher": "Bloomsbury",
+        "description": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling."
+    },
+
+    {
+        "id": 5,
+        "title": "The Little Prince",
+        "author": "Antoine de Saint-Exupéry",
+        "year": 1943,
+        "publisher": "Reynal & Hitchcock",
+        "description": "The Little Prince is a novella, the most famous work of French aristocrat, writer, poet, and pioneering aviator Antoine de Saint-Exupéry."
+    },
+
+
+    {
+        "id": 4,
+        "description": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling, and the second book written in the Harry Potter series."
+    }
+]
